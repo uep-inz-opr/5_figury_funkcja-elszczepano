@@ -13,7 +13,7 @@ def calculate():
     sum = 0;
 
     for figure in figures:
-        figureDimensions = list(map(int, figure))
+        figureDimensions = list(map(float, figure))
         
         if( len(figureDimensions) == 1 ):
             sum += circle( figureDimensions[ 0 ] )
@@ -38,7 +38,7 @@ def circle(radius):
     return math.pi * radius * radius
 
 def triangle(a,b,c):
-    s = int((a+b+c)/2)
+    s = (a+b+c)/2
     return math.sqrt(s*(s-a)*(s-b)*(s-c))
 
 calculate()
