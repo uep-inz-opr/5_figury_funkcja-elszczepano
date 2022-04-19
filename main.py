@@ -6,7 +6,7 @@ figures = []
 
 # Collect documents
 for index in range(0, i):
-    dimensions = input().split( " " )
+    dimensions = input().replace('\r', '').replace('\n', '').split( " " )
     figures.append(dimensions)
 
 def calculate():
