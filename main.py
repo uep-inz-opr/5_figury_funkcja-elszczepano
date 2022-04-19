@@ -5,7 +5,7 @@ i = int( input() )
 figures = []
 
 # Collect documents
-for index in range(0, int):
+for index in range(0, i):
     dimensions = input().split( " " )
 
     figures.append(map(int, dimensions))
