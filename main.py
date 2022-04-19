@@ -5,7 +5,7 @@ i = int( input() )
 figures = []
 
 # Collect documents
-for index in range(0, i):
+for index in range(0, int):
     dimensions = input().split( " " )
 
     figures.append(map(int, dimensions))
@@ -15,15 +15,15 @@ def calculate():
     sum = 0;
 
     for figure in figures:
-        if( figure.size() == 1 ):
+        if( len(figure) == 1 ):
             sum += circle( figure[ 0 ] )
 
             continue;
-        if( figure.size() == 2 ):
+        if( len(figure) == 2 ):
             sum += rectangle( figure[ 0 ], figure[ 1 ] )
             
             continue;
-        if( figure.size() == 3 ):
+        if( len(figure) == 3 ):
             sum += triangle( figure[ 0 ], figure[ 1 ], figure[ 2 ] )
             
             continue;
