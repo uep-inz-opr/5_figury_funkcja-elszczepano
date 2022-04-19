@@ -32,7 +32,7 @@ def calculate():
 
         exit(0)
     
-    print( sum )
+    print( round(sum, 1) )
 
 def rectangle(width, height):
     return width * height
